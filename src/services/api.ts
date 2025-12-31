@@ -41,7 +41,7 @@ export const api = {
     await delay(500);
     
     // If there is a real API, use this:
-    // const response = await axios.post(`${_API_BASE_URL}/lessons/${lessonId}/take`);
+    // const response = await axios.post(`${API_BASE_URL}/lessons/${lessonId}/take`);
     // return response.data;
     
     // Mock take lesson
