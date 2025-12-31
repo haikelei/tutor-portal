@@ -1,7 +1,10 @@
-import axios from 'axios';
 import { Lesson } from '../types';
 import { mockLessons } from '../data/mockData';
 
+// Reserved for future API integration when connecting to real backend
+// @ts-ignore - Reserved for future use
+import axios from 'axios';
+// @ts-ignore - Reserved for future use
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000/api';
 
 // Mock API delay
@@ -38,7 +41,7 @@ export const api = {
     await delay(500);
     
     // If there is a real API, use this:
-    // const response = await axios.post(`${API_BASE_URL}/lessons/${lessonId}/take`);
+    // const response = await axios.post(`${_API_BASE_URL}/lessons/${lessonId}/take`);
     // return response.data;
     
     // Mock take lesson
