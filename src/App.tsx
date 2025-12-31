@@ -20,7 +20,7 @@ function App() {
   }, [isDark]);
 
   return (
-    <Router>
+    <Router basename={import.meta.env.PROD ? '/tutor-portal' : ''}>
       <Routes>
         <Route
           path="/login"
